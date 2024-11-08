@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/images/logo-math-game.png" type="image/x-icon">
+    <title>Math game (Khushnudbek)</title>
+</head>
+<body>
+    <div class="container">
+        <div class="settings">
+            <div class="operators">
+                <span>Operators</span>
+                <div>
+                    <button id="plus" onclick="operations('+')">+</button>
+                    <button id="minus" onclick="operations('-')">-</button>
+                    <button id="multip" onclick="operations('*')">*</button>
+                </div>
+            </div>
+            <div class="rooms">
+                <span>Rooms</span>
+                <div>
+                    <button id="one" onclick="rooms('1')">1</button>
+                    <button id="two" onclick="rooms('2')">2</button>
+                    <button id="three" onclick="rooms('3')">3</button>
+                </div>
+            </div>
+        </div>
+        <main>
+            <h1>Find the <span id="mathing">sum</span> of <span id="eks">X</span> and <span id="igrek">Y</span>.</h1>
+            <div id="infodata">
+                <div class="score">
+                    <img src="./assets/images/person-icon.png" alt="#">
+                    <div><span id="user">0</span>:<span id="computer">0</span></div>
+                    <img src="./assets/images/robot-icon.jpg" alt="#">
+                </div>
+                <time>00:<span id="time">00</span></time>
+            </div>
+            <div id="choices">
+                <button id="box1">152</button>
+                <button id="box2">262</button>
+                <button id="box3">373</button>
+                <button id="box4">484</button>
+            </div>
+            <div class="difficulty">
+                <button id="easybtn">Easy</button>
+                <button id="mediumbtn">Medium</button>
+                <button id="hardbtn">Hard</button>
+            </div>
+        </main>
+        <div class="process">
+            <button id="start" onclick="mainFunction()">Start</button>
+            <button id="restart" onclick="resetFN()">Restart</button>
+        </div>
+        <p>O'yin 10gacha. Qani kim yutar ekan! 😉</p>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
